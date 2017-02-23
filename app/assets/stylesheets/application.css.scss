@@ -16,12 +16,46 @@
  
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
  
  h1, h2, h3{
      font-family: 'Sansita', sans-serif;
      text-align: center;
-     text-shadow: 3px 2px red;
+     text-shadow: 2px 1px white;
  }
 // a:hover{
 //  background-color: #008000;
 // }
+
+body, .navbar{
+ // this piece of Gradient CSS is made by @_ighosh. Thank you! 
+ background: #200122; /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #200122 , #6f0000); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #200122 , #6f0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// this is for the border
+.navbar{
+ border: none;
+}
+
+// this is for navigation bars like Python and JavaScript
+.navbar-brand a{
+  display: inline;
+  padding-right: 40px;
+}
+
+// this is for the spacing between navigation bars
+.navbar-brand{
+  margin: 20px 50px 0px 50px;
+ }
+ 
+ // this is the idead of superficity. need to do this since bootstrap is doing it this way 
+ .navbar-default .navbar-brand:hover{
+  color: #bfae6e;
+ }
+ 
+.home-elitism {
+ color: white;
+}

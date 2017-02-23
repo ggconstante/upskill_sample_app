@@ -19,21 +19,38 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href ="/" class="navbar-brand">Python</a>
-          <a href ="/" class="navbar-brand">JavaScript</a> 
+          <!--adding icons by using font awesome-->
+          <a href ="/" class="navbar-brand"><i class="fa fa-youtube-square"> YouTube</i></a>
+          <a href ="/" class="navbar-brand"><i class="fa fa-facebook"> FaceBook</i></a> 
+          
+          <!--this is the Rails way to link to another page -->
+          <%= link_to root_path, class:"navbar-brand" do %>
+          <i class="fa fa-amazon"></i>
+          Amazon
+          <% end %>
+          
+          <!--this is the Rails way to write it---------- the "=" is only used to inject things -->
+          <%= link_to "/", class:"navbar-brand" do %>
+          <i class="fa fa-github-alt"></i>
+          GitHub
+          <% end %>
         </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/about"> Link to About</a> 
+            <a href="/about"> About</a>
+            <!--this is the Rails way-->
+            <li><%= link_to "Q/A", "/qa" %></li>
+            <!--this is the rails way-->
+            <li><%= link_to "Info", info_path %></li>
           </li>
         </ul>
       </div>
       </div>
     </nav>
     <!--this is a bootstrap class container-->
-    <div class = "container">
-      <%= yield %>
-    </div>
+    <!--<div class = "container"> we will get rid of this for us to have more control on the page-->
+    <%= yield %>
+    <!--</div>-->
   </body>
 </html>
