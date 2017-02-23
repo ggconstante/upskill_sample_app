@@ -47,8 +47,10 @@ body, .navbar{
 }
 
 // this is for the spacing between navigation bars
-.navbar-brand{
+.navbar-brand {
+  font-family: 'Sansita', sans-serif; /*make sure to add this since you did this also in your body*/
   margin: 20px 50px 0px 50px;
+  font-weight: 500;
  }
  
  // this is the idead of superficity. need to do this since bootstrap is doing it this way 
@@ -58,4 +60,13 @@ body, .navbar{
  
 .home-elitism {
  color: white;
+}
+p {
+ text-align:center;
+ color:#ff8300;
+}
+
+html {
+ overflow-y: scroll;
+ // width: 100%;
 }
