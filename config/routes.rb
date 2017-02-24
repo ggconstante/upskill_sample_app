@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
     get 'info', to: 'pages#info'
     get 'qa', to: 'pages#qa'
-    #resources :contacts #rails way and not working and this creates multiple routes in your routes.rb 
-    get 'contacts/newform', to: 'contacts#newform'  
+    resources :contacts 
+    get 'contacts/new', to: 'contacts#new'  
 end

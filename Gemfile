@@ -34,6 +34,9 @@ gem 'bootstrap-sass', '3.3.7'
 # adding Font Awesome using Font CheatSheet 
 gem 'font-awesome-sass', '4.6.2'
 
+# Use gem for better database table display
+gem 'hirb', '0.7.3'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
