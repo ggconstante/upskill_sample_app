@@ -5,6 +5,7 @@
     
     <!--this will divide the column to 4 by using the grid system and offset is to make it center -->
     <div class="col-md-4 col-md-offset-4">
+            <%= flash[:notice] %>
             <!--class = "well" is the reason this is wrapped in a fancy box-->
             <div class="well">
                 <%= form_for @contact do |f| %>
