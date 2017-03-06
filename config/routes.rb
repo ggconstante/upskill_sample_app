@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     # this gives you all the access for the links
     # you do this by running rails/rake routes
     # this is how you clean up routes resources : contacts, only: [:new, :create] 
-    resources :contacts 
+    resources :contacts, only:[:new, :create]
     get 'contacts/new', to: 'contacts#new' , as: 'contacts_new'
 end
